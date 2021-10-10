@@ -1,0 +1,146 @@
+*{  margin:0;
+    padding:0;}
+
+    header{
+       background-image: linear-gradient(to right, rgb(82, 255, 82), rgb(169, 255, 169));
+       display: flex;
+       align-items: center;
+        height:100px
+    }
+
+   .titulo{font-family: 'Poppins', sans-serif;
+       font-size: 49px;
+       padding-left: 10px;}
+
+nav{
+   height: 100px;
+   background-image: url(https://as1.ftcdn.net/v2/jpg/03/13/60/96/500_F_313609690_M8UEDgQII0D6PW4Hi5aT2Jz5eT20fzkr.jpg) ;
+   background-repeat: repeat ;}
+
+   .menu{
+       display: flex;
+           flex-flow: row  wrap;
+           justify-content: space-around;
+           padding-top: 30px;
+           list-style-type: none;}
+
+   .menuItem{
+       color:black;
+       font-family: 'Cabin', sans-serif;
+       font-size: 20px;
+       font-weight: bold;
+       text-decoration:none;}
+   
+   nav a:hover{
+       background-color: #63ff43;}
+
+
+.main{
+    height: 600px;
+    background-color: #fffceb;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100% ;
+    grid-template-areas: "main mainDos";
+    align-items: center;
+       }
+  
+   
+   .sectionMain{grid-area: main;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+        }
+
+
+   .subtitulo {color: rgb(6, 6, 141);
+       font-family: 'Poppins', sans-serif;
+       font-size: 40px;
+       }
+   
+       .parrafoMain{font-family: Arial, Helvetica, sans-serif;
+           font-size: 30px;}
+
+
+    .imagenMain{
+        
+        grid-area: mainDos;
+        max-width: 100%;
+         height: auto;
+         justify-self: center;
+       
+       }
+       
+       /* PROPIEDAD PARA MAIN DE "TIENDA" */
+      .tiendaMain{
+        background-color: #fffceb;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 400px 400px ;
+        grid-template-areas: "titulo titulo"
+                            "main main2"
+                            "main3 main4";
+        flex-flow: column nowrap;
+        justify-items: center;
+        align-items: center;
+        
+      } 
+
+      .subtituloTienda{grid-area: titulo;
+        color: rgb(6, 6, 141);
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        padding-left: 30px;  
+    }
+      .menu1{grid-area: main;}
+      .menu2{grid-area: main2;}
+      .menu3{grid-area: main3;}
+      .menu{grid-area: main4;}
+
+
+
+       /* PROPIEDADES PARA "BLOG" */
+       .video1{
+          grid-area: main;
+       }
+       .video2{
+           grid-area: mainDos;
+       }
+
+       
+       /* PROPIEDADES PARA "CONTACTO"*/
+       .fieldsetContacto{
+           display:flex;
+           flex-direction: column ;
+       }
+
+
+
+footer{
+      height:100px; 
+      background-image: linear-gradient(to left, rgb(82, 255, 82), rgb(169, 255, 169))
+   }
+
+   .contenidoFooter{
+       display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+           align-content:space-around;
+           align-items: center;
+       padding-top: 30px;
+       font-family:'Cabin', sans-serif ;
+       font-size: 20px; 
+   }
+
+   footer a{
+       text-decoration: none;
+       color: black;
+   }
+
+
+
+@media only screen and (max-width: 600px){
+
+
+    
+}
